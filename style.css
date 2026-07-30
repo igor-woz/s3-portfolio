@@ -218,3 +218,59 @@ section{
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
 }
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+.experience{
+    background-color: var(--bg-color);
+    color: black;
+}
+.experience h2{
+    color: var(--text-color);
+}
+.experience-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.experience-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.experience-box:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.experience-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.experience-info h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+.experience-info p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+.experience-info i{
+    font-size: 8rem;
+}
