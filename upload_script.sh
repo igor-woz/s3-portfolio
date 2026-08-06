@@ -10,7 +10,7 @@ fi
 for file in "$@"; do
     if [ -f "$file" ]; then
         echo "Processing file: $file"
-        aws s3 cp "$file" s3://your-bucket-name/
+        aws s3 cp "$file" s3://your-bucket-with website/
     else
         echo "Warning: $file is not a valid file."
     fi

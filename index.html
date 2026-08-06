@@ -205,7 +205,7 @@
             </div>
             <div class="input-group-2">
                 <textarea name="message" id="msgContent" placeholder="Your Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <button type="submit" class="btn">Send Message</button>
             </div>
         </form>
     </section>
@@ -253,7 +253,7 @@
     </footer>
 
     <script>      (function () {
-           const URL = "https://your-api-gateway-endpoint-url.aws-region.amazonaws.com/acc/resource";
+           const URL = "<YOUR_API_GATEWAY_RESOURCE/STAGE/RESOURCE>";
 
 
            const form = document.getElementById('contactForm');
@@ -278,7 +278,7 @@
                    const resp = await fetch(URL, {
                        method: 'POST',
                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                       body: JSON.stringify({ name, email, subject, message }),
+                       body: JSON.stringify({ 'name': name, 'email': email, 'subject': subject, 'message': message }),
                        mode: 'cors' // not required, but harmless if you want to make it explicit
                    });
 
