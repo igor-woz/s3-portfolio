@@ -1,5 +1,4 @@
 # s3-portfolio
-<<<<<<< HEAD
 
 A static portfolio website and the AWS architecture to host it — S3 for storage, CloudFront for delivery, Route 53 for DNS, and a serverless contact form built on API Gateway, Lambda, and SES, with Cloudflare Turnstile guarding against bot submissions.
 
@@ -255,9 +254,4 @@ The hosted zone is the one that keeps billing if you forget it.
 - Preflight requests and why CORS has to be configured on both API Gateway and in the function's response headers
 - Debugging a serverless request path through CloudWatch Logs
 
-=======
-This repository contains the code for a simple static portfolio website that is ready to be hosted in an S3 bucket. The repo contains the exact architecture that can be used to deploy it on AWS. 
 
-## Architecture Overview
-![alt text](ArchitectureDiagram.jpg "Architecture Diagram")
->>>>>>> a847ddc52e23e63775ed9339460e7a41ea929a34
