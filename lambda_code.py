@@ -41,7 +41,7 @@ def lambda_handler(event, context):
     email = data.get('email')
     subject = data.get('subject')
     message = data.get('message')
-    token = data.get("turnstileToken")
+    token = data.get("cfToken")
     source_ip = event.get("requestContext", {}).get("identity", {}).get("sourceIp")
 
     if not token or not verify_turnstile(token, source_ip):
