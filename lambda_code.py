@@ -77,7 +77,7 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'headers': {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://www.igorwozlab.org"
+            "Access-Control-Allow-Origin": "https://www.yourdomain.org"
         },
         'body': json.dumps({"result": "Success"}),
     }
